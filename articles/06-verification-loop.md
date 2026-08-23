@@ -57,3 +57,11 @@
 ## 下一篇预告
 
 验证循环不一定收敛。下一篇讨论错误、取消、超时和外部改动出现时，Agent 如何恢复或清楚交接。
+
+## 源码与架构补充
+
+研究记录见 [`research/episode-06-research.md`](../research/episode-06-research.md)。执行 Item 的退出码、输出、耗时与 FileChange 状态构成动作证据；turn 级 diff 便于展示全量变更，但仍需项目测试和人工验收补足业务证据。
+
+![四类验证证据](../assets/visuals/06-evidence-layers.svg)
+
+![验证结果如何回到下一轮](../assets/visuals/06-verification-loop.svg)

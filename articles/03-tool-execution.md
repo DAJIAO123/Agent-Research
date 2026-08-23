@@ -71,3 +71,11 @@
 ## 下一篇预告
 
 工具可以执行动作，但复杂任务还需要决定顺序和阶段。下一篇讨论计划如何作为外部控制状态，让任务可以被校正。
+
+## 源码与架构补充
+
+研究记录见 [`research/episode-03-research.md`](../research/episode-03-research.md)。`CommandExecution`、`FileChange` 和 MCP 调用都是带状态的 Item；模型只提交结构化意图，app-server/core 负责权限、执行、结果归一化和事件回流。
+
+![工具调用的协议化执行链](../assets/visuals/03-tool-protocol.svg)
+
+![成功、拒绝与失败的结果分支](../assets/visuals/03-tool-outcomes.svg)

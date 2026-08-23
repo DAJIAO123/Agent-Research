@@ -63,3 +63,11 @@ Agent 要进入真实项目，必须面对文件、命令、网络和外部副�
 ## 下一篇预告
 
 动作被允许并不意味着目标完成。下一篇讨论测试、构建、行为检查和人工验收如何组成验证闭环。
+
+## 源码与架构补充
+
+研究记录见 [`research/episode-05-research.md`](../research/episode-05-research.md)。`turn/start` 将 approval、sandbox、permissions 和 cwd 作为 Turn 级设置传入 core，并拒绝互斥配置。权限、沙箱和确认分别控制能力、作用范围与放行时机。
+
+![权限、沙箱与确认的三层边界](../assets/visuals/05-boundaries.svg)
+
+![一次动作的拦截位置](../assets/visuals/05-approval-path.svg)

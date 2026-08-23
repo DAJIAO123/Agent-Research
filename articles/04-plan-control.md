@@ -65,3 +65,11 @@
 ## 下一篇预告
 
 计划表达“想做什么”，但不能自动授予能力。下一篇拆解权限、沙箱和人工确认的差异。
+
+## 源码与架构补充
+
+研究记录见 [`research/episode-04-research.md`](../research/episode-04-research.md)。协议把 `ThreadItem::Plan` 作为可观察事件，因此计划是协作状态而非模型内部推理的逐字转录。工具结果、用户 steer 和失败都可以让计划进入下一状态。
+
+![计划作为可更新状态机](../assets/visuals/04-plan-state.svg)
+
+![计划与证据的闭环](../assets/visuals/04-plan-evidence.svg)

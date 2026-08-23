@@ -56,3 +56,11 @@
 ## 系列结语
 
 从状态、上下文、工具、计划、边界、验证、恢复到协作，Agent 的可靠性始终来自工程系统对模型判断的组织。模型决定下一步可能是什么，运行层决定这一步是否可执行、可观察、可恢复和可交付。
+
+## 源码与架构补充
+
+研究记录见 [`research/episode-08-research.md`](../research/episode-08-research.md)。Thread 的 parent/role 元数据与 `CollabAgentToolCall`、`SubAgentActivity` Item 说明协作被纳入事件模型；它们证明了可追踪的协作边界，但不等于某种固定调度算法。
+
+![主代理与子代理的协作边界](../assets/visuals/08-agent-topology.svg)
+
+![并行收益与协调成本](../assets/visuals/08-parallel-tradeoff.svg)

@@ -84,3 +84,11 @@ Thread 可以保留较完整的历史，但 `for_prompt` 会按照模型输入�
 ## 下一篇预告
 
 下一篇继续追踪判断的另一端：模型决定读取文件、修改内容或运行命令后，工具层如何把结构化意图变成真实动作。
+
+## 源码与架构补充
+
+研究记录见 [`research/episode-02-research.md`](../research/episode-02-research.md)。关键源码事实是 `Turn` 将 step context 与 `history.for_prompt(...)` 分开，前者描述现场，后者生成模型输入投影。这个分层解释了为什么完整日志不等于完整 prompt，也解释了上下文裁剪为何必须由运行层统一负责。
+
+![上下文选择的四层投影](../assets/visuals/02-context-projection.svg)
+
+![完整历史与模型输入的差异](../assets/visuals/02-context-window.svg)

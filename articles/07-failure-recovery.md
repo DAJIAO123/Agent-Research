@@ -58,3 +58,11 @@ rollout 重建器会识别 `TurnAborted`、`TurnComplete`、回滚和压缩边�
 ## 下一篇预告
 
 最后一篇把任务规模扩大到多个执行分支：子代理什么时候能降低总成本，什么时候只会增加协调问题？
+
+## 源码与架构补充
+
+研究记录见 [`research/episode-07-research.md`](../research/episode-07-research.md)。协议将 `TurnAborted` 与失败/完成区分，中断按 Turn ID 关联活动执行；rollout 重建从事件恢复历史，避免只保留最后一条回复而丢失已发生副作用。
+
+![失败分类与恢复路径](../assets/visuals/07-recovery-map.svg)
+
+![中断、失败与继续的状态差异](../assets/visuals/07-turn-states.svg)

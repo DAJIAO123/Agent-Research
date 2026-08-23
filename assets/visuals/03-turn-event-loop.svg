@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">一次 Turn 如何形成可观察的事件链</title>
+  <desc id="desc">用户输入触发模型判断，随后出现工具请求、边界检查、工具结果、验证和最终响应，所有事件写入任务记录。</desc>
+  <defs><pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#dbe5ed" stroke-width="1"/></pattern><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#5b7182"/></marker></defs>
+  <rect width="1200" height="900" fill="#f7fafc"/><rect width="1200" height="900" fill="url(#grid)" opacity="0.5"/>
+  <text x="72" y="82" fill="#10283d" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="34" font-weight="700">一次 Turn，如何变成可观察的事件链</text>
+  <text x="72" y="124" fill="#5c7182" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="18">不是一个黑盒步骤，而是一组可以记录、暂停和验证的事件</text>
+
+  <line x1="130" y1="300" x2="1070" y2="300" stroke="#668093" stroke-width="3" marker-end="url(#a)"/>
+  <g font-family="Inter, 'Microsoft YaHei', sans-serif">
+    <g transform="translate(140 300)"><circle r="28" fill="#dceffb" stroke="#9cc9e4" stroke-width="2"/><text y="7" text-anchor="middle" fill="#12628d" font-size="18" font-weight="700">1</text><text y="72" text-anchor="middle" fill="#10283d" font-size="18" font-weight="700">用户输入</text><text y="102" text-anchor="middle" fill="#6a7e8e" font-size="15">目标与约束</text></g>
+    <g transform="translate(330 300)"><circle r="28" fill="#daf3ed" stroke="#83cbbb" stroke-width="2"/><text y="7" text-anchor="middle" fill="#087563" font-size="18" font-weight="700">2</text><text y="72" text-anchor="middle" fill="#10283d" font-size="18" font-weight="700">模型判断</text><text y="102" text-anchor="middle" fill="#6a7e8e" font-size="15">下一步行动</text></g>
+    <g transform="translate(520 300)"><circle r="28" fill="#fff1d3" stroke="#e0bd70" stroke-width="2"/><text y="7" text-anchor="middle" fill="#825400" font-size="18" font-weight="700">3</text><text y="72" text-anchor="middle" fill="#10283d" font-size="18" font-weight="700">工具请求</text><text y="102" text-anchor="middle" fill="#6a7e8e" font-size="15">读 · 写 · 执行</text></g>
+    <g transform="translate(710 300)"><circle r="28" fill="#fff0f1" stroke="#e7a2aa" stroke-width="2"/><text y="7" text-anchor="middle" fill="#a52e3d" font-size="18" font-weight="700">4</text><text y="72" text-anchor="middle" fill="#10283d" font-size="18" font-weight="700">边界检查</text><text y="102" text-anchor="middle" fill="#6a7e8e" font-size="15">允许 · 确认 · 阻止</text></g>
+    <g transform="translate(900 300)"><circle r="28" fill="#fff1d3" stroke="#e0bd70" stroke-width="2"/><text y="7" text-anchor="middle" fill="#825400" font-size="18" font-weight="700">5</text><text y="72" text-anchor="middle" fill="#10283d" font-size="18" font-weight="700">工具结果</text><text y="102" text-anchor="middle" fill="#6a7e8e" font-size="15">输出或错误</text></g>
+    <g transform="translate(1060 300)"><circle r="28" fill="#daf3ed" stroke="#83cbbb" stroke-width="2"/><text y="7" text-anchor="middle" fill="#087563" font-size="18" font-weight="700">6</text><text y="72" text-anchor="middle" fill="#10283d" font-size="18" font-weight="700">继续判断</text><text y="102" text-anchor="middle" fill="#6a7e8e" font-size="15">验证或结束</text></g>
+  </g>
+
+  <path d="M1060 418V506C1060 542 1030 566 994 566H382C346 566 330 542 330 506V420" fill="none" stroke="#15a28a" stroke-width="3" stroke-dasharray="9 8" marker-end="url(#a)"/>
+  <text x="562" y="608" fill="#087563" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="18" font-weight="600">只要任务未结束，结果就回到下一次判断</text>
+
+  <rect x="170" y="674" width="860" height="94" rx="16" fill="#10283d"/>
+  <text x="210" y="715" fill="#9ddfd3" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600">EVENT LOG</text>
+  <text x="210" y="750" fill="#f3f8fb" font-family="Consolas, 'Microsoft YaHei', monospace" font-size="17">input  →  reasoning  →  tool_call  →  approval  →  result  →  verification</text>
+  <text x="72" y="832" fill="#789" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="15">CODEX AGENT SERIES  ·  EVENT FLOW 03</text>
+</svg>

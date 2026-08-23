@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">回答窗口与 Agent 工作台的差别</title>
+  <desc id="desc">回答窗口在生成答案后结束，Agent 工作台继续执行、验证并交由人验收。</desc>
+  <defs><pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#cfdae3"/></pattern><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#557083"/></marker></defs>
+  <rect width="1200" height="900" fill="#f8fafc"/><rect width="1200" height="900" fill="url(#dots)"/>
+  <text x="72" y="82" fill="#10283d" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="34" font-weight="700">答案结束之后，工作是否还在继续？</text>
+  <text x="72" y="124" fill="#5c7182" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="18">关键差别不在输出长度，而在系统是否进入真实任务现场</text>
+  <line x1="600" y1="185" x2="600" y2="778" stroke="#cbd8e2" stroke-width="2"/>
+
+  <text x="92" y="214" fill="#12628d" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700">回答窗口</text>
+  <text x="660" y="214" fill="#087563" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="700">Agent 工作台</text>
+
+  <g font-family="Inter, 'Microsoft YaHei', sans-serif">
+    <circle cx="160" cy="326" r="52" fill="#e5f2fb" stroke="#9cc9e4" stroke-width="2"/><text x="160" y="333" text-anchor="middle" fill="#164f70" font-size="20" font-weight="700">提问</text>
+    <path d="M214 326H330" stroke="#557083" stroke-width="3" marker-end="url(#arr)"/>
+    <circle cx="402" cy="326" r="72" fill="#ffffff" stroke="#9cc9e4" stroke-width="2"/><text x="402" y="318" text-anchor="middle" fill="#10283d" font-size="22" font-weight="700">生成答案</text><text x="402" y="350" text-anchor="middle" fill="#6b7f8e" font-size="16">系统在此结束</text>
+    <rect x="92" y="458" width="430" height="160" rx="16" fill="#ffffff" stroke="#cfdae3"/><text x="120" y="505" fill="#10283d" font-size="19" font-weight="700">后续操作仍由人完成</text><text x="120" y="548" fill="#617685" font-size="17">复制建议 · 修改文件 · 运行命令 · 检查结果</text><text x="120" y="584" fill="#a34b55" font-size="16">回答正确 ≠ 工作已经交付</text>
+
+    <circle cx="710" cy="326" r="46" fill="#daf3ed" stroke="#83cbbb" stroke-width="2"/><text x="710" y="333" text-anchor="middle" fill="#075f50" font-size="19" font-weight="700">目标</text>
+    <path d="M758 326H818" stroke="#557083" stroke-width="3" marker-end="url(#arr)"/>
+    <circle cx="872" cy="326" r="46" fill="#fff1d3" stroke="#e0bd70" stroke-width="2"/><text x="872" y="333" text-anchor="middle" fill="#825400" font-size="19" font-weight="700">行动</text>
+    <path d="M920 326H980" stroke="#557083" stroke-width="3" marker-end="url(#arr)"/>
+    <circle cx="1034" cy="326" r="46" fill="#daf3ed" stroke="#83cbbb" stroke-width="2"/><text x="1034" y="333" text-anchor="middle" fill="#075f50" font-size="19" font-weight="700">证据</text>
+    <path d="M1034 374V438C1034 468 1008 486 978 486H760C730 486 710 466 710 436V376" fill="none" stroke="#15a28a" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arr)"/>
+    <rect x="660" y="520" width="448" height="160" rx="16" fill="#ffffff" stroke="#9bd4c8"/><text x="688" y="567" fill="#10283d" font-size="19" font-weight="700">运行系统保存并组织过程</text><text x="688" y="610" fill="#617685" font-size="17">上下文 · 工具动作 · 权限边界 · 验证记录</text><text x="688" y="646" fill="#087563" font-size="16">人依据证据决定是否交付</text>
+  </g>
+  <text x="72" y="832" fill="#789" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="15">CODEX AGENT SERIES  ·  COMPARISON 02</text>
+</svg>

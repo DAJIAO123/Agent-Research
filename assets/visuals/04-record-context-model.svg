@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">被记录，不等于被展示，也不等于进入模型</title>
+  <desc id="desc">完整运行记录投影为客户端历史，并经过选择、压缩和重读形成本轮模型上下文。</desc>
+  <defs>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#dce6ef" stroke-width="1"/></pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#557083"/></marker>
+  </defs>
+  <rect width="1200" height="900" fill="#f7fafc"/><rect width="1200" height="900" fill="url(#grid)" opacity="0.55"/>
+  <text x="72" y="82" fill="#10283d" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="34" font-weight="700">被记录，不等于被展示，也不等于进入模型</text>
+  <text x="72" y="124" fill="#5c7182" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="18">同一段任务历史，需要服务恢复、界面和当前判断三种不同目标</text>
+
+  <path d="M376 430H438" stroke="#557083" stroke-width="3" marker-end="url(#arrow)"/>
+  <path d="M762 430H824" stroke="#557083" stroke-width="3" marker-end="url(#arrow)"/>
+  <text x="407" y="406" text-anchor="middle" fill="#5c7182" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="15">投影</text>
+  <text x="793" y="396" text-anchor="middle" fill="#5c7182" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="15">选择</text>
+  <text x="793" y="418" text-anchor="middle" fill="#5c7182" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="15">压缩 · 重读</text>
+
+  <g font-family="Inter, 'Microsoft YaHei', sans-serif">
+    <rect x="72" y="220" width="304" height="460" rx="18" fill="#ffffff" stroke="#8fd8ca" stroke-width="2"/>
+    <rect x="72" y="220" width="304" height="8" rx="4" fill="#15a28a"/>
+    <text x="102" y="278" fill="#087563" font-size="22" font-weight="700">完整运行记录</text>
+    <text x="102" y="312" fill="#5c7182" font-size="16">目标：恢复与审计</text>
+    <line x1="102" y1="342" x2="346" y2="342" stroke="#d5e2e9"/>
+    <g fill="#10283d" font-size="17">
+      <circle cx="112" cy="384" r="5" fill="#15a28a"/><text x="130" y="391">Turn 生命周期</text>
+      <circle cx="112" cy="432" r="5" fill="#15a28a"/><text x="130" y="439">用户与 Agent 消息</text>
+      <circle cx="112" cy="480" r="5" fill="#15a28a"/><text x="130" y="487">命令与文件变更</text>
+      <circle cx="112" cy="528" r="5" fill="#15a28a"/><text x="130" y="535">上下文与世界状态</text>
+      <circle cx="112" cy="576" r="5" fill="#15a28a"/><text x="130" y="583">压缩与回滚标记</text>
+    </g>
+    <rect x="102" y="620" width="244" height="36" rx="18" fill="#daf3ed"/><text x="224" y="644" text-anchor="middle" fill="#087563" font-size="14" font-weight="600">记录范围最完整</text>
+
+    <rect x="448" y="270" width="304" height="360" rx="18" fill="#ffffff" stroke="#b9d5e8" stroke-width="2"/>
+    <rect x="448" y="270" width="304" height="8" rx="4" fill="#5e9fc8"/>
+    <text x="478" y="328" fill="#12628d" font-size="22" font-weight="700">客户端展示历史</text>
+    <text x="478" y="362" fill="#5c7182" font-size="16">目标：理解与操作</text>
+    <line x1="478" y1="392" x2="722" y2="392" stroke="#d5e2e9"/>
+    <g fill="#10283d" font-size="17">
+      <circle cx="488" cy="434" r="5" fill="#5e9fc8"/><text x="506" y="441">消息与进度</text>
+      <circle cx="488" cy="482" r="5" fill="#5e9fc8"/><text x="506" y="489">命令卡片与 diff</text>
+      <circle cx="488" cy="530" r="5" fill="#5e9fc8"/><text x="506" y="537">摘要或分页 Items</text>
+    </g>
+    <rect x="478" y="574" width="244" height="36" rx="18" fill="#e2f1fa"/><text x="600" y="598" text-anchor="middle" fill="#12628d" font-size="14" font-weight="600">面向人的可读投影</text>
+
+    <rect x="834" y="320" width="294" height="260" rx="18" fill="#ffffff" stroke="#e8c67e" stroke-width="2"/>
+    <rect x="834" y="320" width="294" height="8" rx="4" fill="#e7ad38"/>
+    <text x="864" y="378" fill="#8b5b00" font-size="22" font-weight="700">本轮模型上下文</text>
+    <text x="864" y="412" fill="#5c7182" font-size="16">目标：支持当前判断</text>
+    <line x1="864" y1="442" x2="1098" y2="442" stroke="#d5e2e9"/>
+    <text x="864" y="486" fill="#10283d" font-size="17">选中的历史与规则</text>
+    <text x="864" y="526" fill="#10283d" font-size="17">受窗口和任务约束</text>
+    <rect x="864" y="544" width="234" height="24" rx="12" fill="#fff1d3"/>
+  </g>
+
+  <rect x="222" y="728" width="756" height="58" rx="29" fill="#10283d"/>
+  <text x="600" y="765" text-anchor="middle" fill="#eaf5f8" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="18" font-weight="600">完整记录服务恢复；当前上下文只服务这一刻的判断</text>
+  <text x="72" y="832" fill="#789" font-family="Inter, 'Microsoft YaHei', sans-serif" font-size="15">CODEX AGENT SERIES  ·  DATA PROJECTION 04</text>
+</svg>
