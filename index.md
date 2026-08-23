@@ -10,27 +10,40 @@ layout: default
 
 `任务状态 → 上下文 → 工具动作 → 计划控制 → 权限边界 → 验证闭环 → 失败恢复 → 子代理协作`
 
-## 已发布
+## 章节目录
 
-### 第一篇：Codex 保存的不是答案，而是一段可重放的执行历史
+### 01 · Codex 保存的不是答案，而是一段可重放的执行历史
 
-从 `Thread`、`Turn`、`ThreadItem` 的协议定义出发，追踪：
+[阅读本章](articles/01-execution-history.md)
 
-- `turn/start → CodexThread → RegularTask → run_turn` 调用链
-- Item 的流式生命周期和可观察状态
-- 运行记录、界面历史与模型上下文的边界
-- Turn 中断、rollout 重建和冷恢复
-- 事件模型的架构收益、成本与替代设计
+### 02 · 上下文不是仓库镜像：Agent 如何决定下一步看什么
 
-[阅读第一篇](articles/01-execution-history.md)
+[阅读本章](articles/02-context-selection.md)
+
+### 03 · 模型不会直接操作环境：工具层如何把判断变成动作
+
+[阅读本章](articles/03-tool-execution.md)
+
+### 04 · 计划不是预测：Agent 如何让复杂任务保持可校正
+
+[阅读本章](articles/04-plan-control.md)
+
+### 05 · Agent 为什么会停下来：权限、沙箱与确认控制的不是同一件事
+
+[阅读本章](articles/05-permission-boundaries.md)
+
+### 06 · 修改成功只是执行结果：验证如何把 Agent 拉回现实
+
+[阅读本章](articles/06-verification-loop.md)
+
+### 07 · 当 Agent 走不通时：恢复能力比重复尝试更重要
+
+[阅读本章](articles/07-failure-recovery.md)
+
+### 08 · 子代理不是多开几个聊天框：并行协作的成本与边界
+
+[阅读本章](articles/08-subagent-coordination.md)
 
 ![Agent 执行闭环](assets/visuals/01-agent-runtime-loop.png)
-
-## 研究原则
-
-- 源码事实、架构推断和未知边界分开记录。
-- 每个关键结论绑定仓库版本、文件路径和符号。
-- 每篇至少包含一个可复现实验。
-- 配图用于解释机制，不用于装饰。
 
 源码仓库：[`openai/codex`](https://github.com/openai/codex)
